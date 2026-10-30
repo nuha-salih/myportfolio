@@ -1,38 +1,20 @@
 /**
- * ┌──────────────────────────────────────────────────────────────────────┐
- * │  هذا هو الملف الوحيد الذي تحتاج إلى تعديله.                          │
- * │  This is the only file you need to edit.                             │
- * └──────────────────────────────────────────────────────────────────────┘
- *
- * كل نصوص الموقع هنا — عربي وإنجليزي جنباً إلى جنب. لا نصّ مكتوب داخل المكوّنات.
- * استبدل القيم النائبة أدناه ببياناتك. لا تغيّر أسماء المفاتيح.
- *
- * Every word on the site lives here, Arabic and English side by side.
- * Replace the placeholder values with your own. Do not rename the keys.
- *
- * ملاحظتان عن العربية / Two notes on the Arabic:
- *  - العربية تُلزمك باختيار جنس الفعل والصفة. اكتب النص الذي تتحدّث فيه عن نفسك
- *    بالصيغة التي تناسبك (المؤنث أو المذكّر)، وثبّت عليها في كل الفقرات.
- *  - النص الموجّه للزائر يبقى محايداً، لأن جنس الزائر غير معروف.
+ * مسودة content.js — مبنية فقط على ما ذكرتِه في المحادثة.
+ * أي قيمة فيها كلمة TODO لا أعرفها: استبدليها قبل النشر.
+ * لم تُغيَّر أسماء المفاتيح، والقيم فقط هي التي استُبدلت.
  */
 
 export const PROFILE = {
-  name: { ar: 'اسمك هنا', en: 'Your Name' },
-  email: 'you@example.com',
-  github: 'https://github.com/your-username',
-  linkedin: 'https://www.linkedin.com/in/your-profile',
-  x: 'https://x.com/your-handle',
+  name: { ar: 'نهى صالح محمداحمد', en: 'Nuha Salih Mohammed' }, // TODO: تأكدي من الاسم الذي تريدينه ظاهرًا
+  email: 'pocopad66@gmai.com', // TODO
+  github: 'https://github.com/nuha-salih',
+  //linkedin: 'https://www.linkedin.com/in/TODO', // TODO أو احذفي السطر إن لم يكن لديك حساب
+  //x: 'https://x.com/TODO', // TODO أو احذفي السطر إن لم يكن لديك حساب
 
-  /* يظهران في الشريط السفلي للبطل — المدينة، والساعة الحيّة فيها.
-     Shown in the hero's bottom bar: your city, and the live time there.
-     قائمة المناطق الزمنية / time zone list:
-     https://en.wikipedia.org/wiki/List_of_tz_database_time_zones */
-  location: { ar: 'مدينتك، بلدك', en: 'Your City, Country' },
+  location: { ar: 'نجران، السعودية', en: 'Najran, Saudi Arabia' }, // TODO: عدّليها إن لم ترغبي بإظهار المدينة
   timeZone: 'Asia/Riyadh',
 }
 
-/* روابط التنقّل — العناوين فقط قابلة للتغيير، أما `id` فمرتبط بأقسام الصفحة.
-   Nav links — translate the labels, but leave `id` alone: it maps to section ids. */
 export const NAV = [
   { id: 'home', ar: 'الرئيسية', en: 'Home' },
   { id: 'about', ar: 'نبذة', en: 'About' },
@@ -45,12 +27,11 @@ export const CONTENT = {
   ar: {
     dir: 'rtl',
     hero: {
-      /* العنوان سؤال قصير من سطرين. الجزء `Accent` يظهر بالبنفسجي الفاتح،
-         وأول فقرة في «نبذة» هي جوابه — اربط الاثنين. */
-      titleBefore: 'السطر الأول من',
-      titleAccent: 'سؤالك',
+      titleBefore: 'كيف نكشف الطائرات المسيّرة',
+      titleAccent: 'مبكرًا',
       titleAfter: '؟',
-      subtitle: 'جملة واحدة تشرح ما الذي تبنيه ولمن. اجعلها قصيرة ومحدّدة.',
+      subtitle:
+        'أجمع بين الذكاء الاصطناعي والأنظمة المدمجة لأبني حلولًا ترصد ما لا تلتقطه العين مبكرًا.',
       ctaPrimary: 'شاهد المشاريع',
       ctaSecondary: 'تواصل معي',
       scroll: 'مرّر للأسفل',
@@ -58,18 +39,16 @@ export const CONTENT = {
     about: {
       index: '01',
       kicker: 'نبذة',
-      /* ثلاث فقرات. الأولى تجيب على سؤال البطل، والثانية عن دراستك وعملك،
-         والثالثة عن وجهتك القادمة. */
       paragraphs: [
-        'الفقرة الأولى — ابدأ بجواب السؤال الذي طرحته في الأعلى.',
-        'الفقرة الثانية — ماذا تدرس وماذا تبني، وما نوع المشاريع التي تشتغل عليها.',
-        'الفقرة الثالثة — إلى أين تتّجه، وما الذي يعجبك في هذا المجال.',
+        'أجيب على هذا السؤال بالجمع بين أمرين: حساسات وأنظمة مدمجة تلتقط المعلومة، ونموذج ذكاء اصطناعي يفهمها. هذا ما أعمل عليه في مشروع لكشف الطائرات المسيّرة الصغيرة مبكرًا، وهو ما زال قيد التطوير.',
+        'أدرس علوم الحاسب في جامعة نجران. أطوّر نماذج الذكاء الاصطناعي وخدمات الباك إند، وأبني مشاريع عتاد  صغيرة بـArduino وESP32، وأتعامل مع أدوات الذكاء الاصطناعي .',
+        'أتجه نحو الروبوتات الانظمه المدمجة وتقنيات TinyMlوالطائرات المسيّرة وكل ما يربط الذكاء الاصطناعي بالعالم الحقيقي . أنا عضوة في أربعة أندية طلابية (الذكاء الاصطناعي، والبرمجة، والأمن السيبراني، وIEEE)، وحصلت على المركز الأول في هاكثون أنيوثون بالمسار التقني.',
       ],
       education: {
         kicker: 'التعليم',
-        degree: 'اسم الدرجة — قيد الدراسة',
-        school: 'اسم الجامعة · المدينة',
-        period: 'من ٢٠٠٠ حتى الآن',
+        degree: 'بكالوريوس علوم الحاسب — قيد الدراسة',
+        school: 'جامعة نجران · نجران',
+        period: 'قيد الدراسة', // TODO: أضيفي سنة البداية إن أحببتِ
       },
     },
     skills: {
@@ -78,13 +57,11 @@ export const CONTENT = {
       titleBefore: 'الأدوات التي',
       titleAccent: 'أعتمد',
       titleAfter: 'عليها.',
-      intro: 'سطر واحد عن طريقتك في اختيار أدواتك.',
-      /* ثلاث مجموعات — هذا العدد مقصود: الشعاع في هذا القسم مبني على ثلاثة أعمدة.
-         Three groups — the count matters: the light beam is built around three columns. */
+      intro: 'أختار أدواتي بحسب المشكلة: ما يربط الحساس بالنموذج بأبسط طريقة تعمل.',
       groups: [
-        { title: 'الواجهة الأمامية', items: ['أداة', 'أداة', 'أداة', 'أداة'] },
-        { title: 'الخلفية واللغات', items: ['أداة', 'أداة', 'أداة'] },
-        { title: 'الأدوات والنشر', items: ['أداة', 'أداة', 'أداة', 'أداة'] },
+        { title: 'الذكاء الاصطناعي والباك إند', items: ['Python', 'FastAPI', 'REST API', 'تعلّم الآلة'] },
+        { title: 'الأنظمة المدمجة', items: ['Arduino', 'ESP32', 'Raspberry Pi', 'الحساسات'] },
+        { title: 'الأمن والأدوات', items:[ 'أدوات الذكاء الاصطناعي ','GitHub'] }, // TODO: أضيفي ما تتقنينه فعلًا
       ],
     },
     projects: {
@@ -93,7 +70,7 @@ export const CONTENT = {
       titleBefore: 'أشياء',
       titleAccent: 'بنيتها',
       titleAfter: 'بنفسي.',
-      intro: 'سطر واحد يمهّد لقائمة مشاريعك.',
+      intro: 'مشاريع تجمع الذكاء الاصطناعي بالعتاد، بعضها مكتمل وبعضها ما زال يُبنى.',
       viewProject: 'افتح المشروع',
       viewCode: 'اقرأ الكود',
       moreTitle: 'مشاريع أخرى',
@@ -104,7 +81,7 @@ export const CONTENT = {
       titleBefore: 'لنتحدّث عمّا',
       titleAccent: 'تبنيه',
       titleAfter: '.',
-      intro: 'جملة أو جملتان: ما الذي تبحث عنه، ومتى يسعدك أن يصلك أحد.',
+      intro: 'يسعدني التعاون في مشاريع الذكاء الاصطناعي والأنظمة المدمجة والطائرات المسيّرة.',
       form: {
         name: 'الاسم',
         email: 'البريد الإلكتروني',
@@ -124,10 +101,11 @@ export const CONTENT = {
   en: {
     dir: 'ltr',
     hero: {
-      titleBefore: 'The first line of',
-      titleAccent: 'your question',
+      titleBefore: 'How do we spot drones',
+      titleAccent: 'early',
       titleAfter: '?',
-      subtitle: 'One sentence on what you build and who it is for. Keep it short and specific.',
+      subtitle:
+        'I combine AI and embedded systems to build solutions that catch what the eye misses.',
       ctaPrimary: 'View projects',
       ctaSecondary: 'Get in touch',
       scroll: 'Scroll',
@@ -136,15 +114,15 @@ export const CONTENT = {
       index: '01',
       kicker: 'About',
       paragraphs: [
-        'First paragraph — start by answering the question you asked above.',
-        'Second paragraph — what you study and what you build, and the kind of work you do.',
-        'Third paragraph — where you are heading, and what you like about this field.',
+        'I answer it by combining two things: sensors and embedded systems that capture the signal, and an AI model that makes sense of it. That is what I am building in a project for early detection of small drones, still in development.',
+        'I study Computer Science at Najran University. I develop AI models and backend services, build small hardware projects with Arduino and ESP32, and work with AI tools.',
+        'I am heading toward robotics, drones,TinyMl and anything that connects AI to the real world. I am a member of four student clubs (AI, Programming, Cybersecurity, and IEEE), and I won first place in the technical track at the Anuthon hackathon.',
       ],
       education: {
         kicker: 'Education',
-        degree: 'Your degree — in progress',
-        school: 'Your university · City',
-        period: '2000 — Present',
+        degree: 'B.Sc. Computer Science — in progress',
+        school: 'Najran University · Najran',
+        period: 'In progress',
       },
     },
     skills: {
@@ -153,11 +131,11 @@ export const CONTENT = {
       titleBefore: 'The tools I',
       titleAccent: 'reach for',
       titleAfter: 'most.',
-      intro: 'One line about how you pick your tools.',
+      intro: 'I pick tools by the problem: the simplest thing that connects the sensor to the model.',
       groups: [
-        { title: 'Frontend', items: ['Tool', 'Tool', 'Tool', 'Tool'] },
-        { title: 'Backend & languages', items: ['Tool', 'Tool', 'Tool'] },
-        { title: 'Tools & deployment', items: ['Tool', 'Tool', 'Tool', 'Tool'] },
+        { title: 'AI & backend', items: ['Python', 'FastAPI', 'REST API', 'Machine learning'] },
+        { title: 'Embedded systems', items: ['Arduino', 'ESP32', 'Raspberry Pi', 'Sensors'] },
+        { title: 'Security & tools', items: ['AI tools', 'GitHub'] },
       ],
     },
     projects: {
@@ -166,7 +144,7 @@ export const CONTENT = {
       titleBefore: 'Things I',
       titleAccent: 'built',
       titleAfter: 'myself.',
-      intro: 'One line introducing your list of projects.',
+      intro: 'Projects that join AI with hardware, some finished and some still being built.',
       viewProject: 'Open project',
       viewCode: 'View code',
       moreTitle: 'More projects',
@@ -177,8 +155,7 @@ export const CONTENT = {
       titleBefore: "Let's talk about what",
       titleAccent: "you're building",
       titleAfter: '.',
-      intro:
-        'A sentence or two: what you are looking for, and when you would like to hear from someone.',
+      intro: 'Happy to collaborate on AI, embedded systems, and drone projects.',
       form: {
         name: 'Name',
         email: 'Email',
@@ -196,93 +173,73 @@ export const CONTENT = {
   },
 }
 
-/**
- * مشاريعك. الحقول:
- *   kind: 'live' موقع منشور يمكن فتحه — 'code' مستودع على GitHub.
- *   featured: true يظهر في بطاقة عريضة. اجعل أفضل أربعة مشاريع فقط مميّزة،
- *             والباقي يظهر تلقائياً في قائمة مضغوطة أسفلها.
- *   image: '/shots/x.png' اختياري — لقطة شاشة تظهر أعلى البطاقة.
- *          احذف الحقل إن لم تكن لديك لقطة؛ لن تُرسم لوحة فارغة مكانها.
- *
- * Your projects. `kind: 'live'` is a deployed site, `'code'` is a repo.
- * Mark only your best four as `featured` — the rest render as a compact list.
- * `image` is optional; omit it entirely rather than leaving it empty.
- *
- * تحقّق من أن كل رابط يفتح فعلاً قبل النشر.
- * Check that every link actually opens before you publish.
- */
+/* TODO: كل رابط url أدناه مؤقت — ضعي رابط المستودع الحقيقي لكل مشروع قبل النشر. */
 export const PROJECTS = [
   {
     id: '01',
-    kind: 'live',
+    kind: 'code',
     featured: true,
-    url: 'https://example.com',
-    title: { ar: 'اسم المشروع الأول', en: 'First Project' },
+    url: 'https://github.com/nuha-salih/Anti-UAV410', // TODO: رابط مستودع مشروع كشف الدرونز
+    title: { ar: 'كشف الطائرات المسيّرة بالذكاء الاصطناعي', en: 'AI-Powered Drone Detection' },
     description: {
-      ar: 'فقرة قصيرة: ما الذي يفعله المشروع، ولمن، وما الجزء الذي بنيته أنت. اذكر المشكلة قبل التقنية.',
-      en: 'A short paragraph: what the project does, who for, and which part you built. Lead with the problem, not the stack.',
+      ar: 'مشروع تخرج قيد التطوير للكشف المبكر عن الطائرات المسيّرة الصغيرة، لأن صغر حجمها يجعل رصدها مبكرًا صعبًا. أعمل على الجانب الذكي من النظام.', //TODO: أضيفي مدخلات النظام (كاميرا/صوت/رادار) وما أُنجز.
+      en: 'A graduation project in development for early detection of small drones, which are hard to spot early because of their size. I work on the AI side of the system.,'// TODO: add the system inputs (camera/audio/radar) and what is done so far.',
     },
-    tech: ['React', 'Tailwind CSS', 'JavaScript'],
+    tech: ['Python', 'AI'],
   },
   {
     id: '02',
     kind: 'code',
     featured: true,
-    url: 'https://github.com/your-username/your-repo',
-    title: { ar: 'اسم المشروع الثاني', en: 'Second Project' },
+    url: 'https://github.com/nuha-salih/Aman_AI', // TODO: رابط مستودع «أمان AI»
+    title: { ar: 'أمان AI', en: 'Aman AI' },
     description: {
-      ar: 'فقرة قصيرة تصف المشروع والتقنيات التي تعلّمتها منه.',
-      en: 'A short paragraph describing the project and what you learned building it.',
+      ar: 'نموذج أولي من هاكثون «أمد» (برعاية بنك الإنماء وأكاديمية طويق). كنت مسؤولة عن نموذج الذكاء الاصطناعي والباك إند وربطه عبر API.',
+      en: 'A prototype from the Amad hackathon (sponsored by Alinma Bank and Tuwaiq Academy). I was responsible for the AI model, the backend, and the API integration. It runs the core functions .',
     },
-    tech: ['Python', 'REST API'],
+    tech: ['AI', 'Backend', 'REST API'],
   },
   {
     id: '03',
-    kind: 'live',
-    featured: true,
-    url: 'https://example.com',
-    title: { ar: 'اسم المشروع الثالث', en: 'Third Project' },
-    description: {
-      ar: 'فقرة قصيرة تصف المشروع.',
-      en: 'A short paragraph describing the project.',
-    },
-    tech: ['Next.js', 'Node.js'],
-  },
-  {
-    id: '04',
     kind: 'code',
     featured: true,
-    url: 'https://github.com/your-username/your-repo',
-    title: { ar: 'اسم المشروع الرابع', en: 'Fourth Project' },
+    url: 'https://github.com/nuha-salih', // TODO: رابط الكود أو احذفي الحقل إن لم يوجد
+    title: { ar: 'روبوت متنقل بحساس ألترا ساوند', en: 'Ultrasonic Mobile Robot' },
     description: {
-      ar: 'فقرة قصيرة تصف المشروع.',
-      en: 'A short paragraph describing the project.',
+      ar: 'روبوت يتجنب العوائق بعجلتين وهيكل خشبي مبني على Arduino Nano ودرايفر محركات وحساس مسافة بالموجات فوق الصوتية، وهو أساس الاستشعار والتحكم.',// TODO: اكتبي ما يفعله فعلًا (يتجنب العوائق؟ يتوقف؟ يدور؟).',
+      en: 'A two-wheeled robot with a wooden chassis, built on an Arduino Nano with a motor driver and an ultrasonic distance sensor, the basis of sensing and control. ',//TODO: describe what it actually does (avoid obstacles? stop? turn?).',
     },
-    tech: ['Java', 'OOP'],
+    tech: ['Arduino Nano', 'Ultrasonic sensor'],
+  },
+   {
+    id: '04', // أو الرقم التسلسلي المناسب لديك
+    kind: 'code',
+    featured: true,
+    url: 'https://github.com/nuha-salih/Solar-Storm-prediction',
+    title: { ar: 'التنبؤ بالعواصف الشمسية', en: 'Solar Storm Prediction' },
+    description: {
+      ar: 'نموذج ذكاء اصطناعي يحلل بيانات النشاط الشمسي للتنبؤ بالعواصف الخطيرة مبكرًا، بهدف حماية الأقمار الصناعية وشبكات الاتصالات الأرضية من تأثيرات الطقس الفضائي العنيف.',
+      en: 'An AI model that analyzes solar activity data to forecast hazardous storms in advance, aiming to protect satellites and global communication grids from severe space weather.',
+    },
+    tech: ['Python', 'Machine Learning', 'Data Analysis'],
   },
 
-  /* ما بعد هذا السطر يظهر في القائمة المضغوطة — سطر واحد لكل مشروع.
-     Everything below renders in the compact list — one line each. */
+  
+   
   {
     id: '05',
-    kind: 'live',
-    url: 'https://example.com',
-    title: { ar: 'مشروع أصغر', en: 'A smaller project' },
-    description: {
-      ar: 'سطر واحد يكفي هنا.',
-      en: 'One line is enough here.',
-    },
-    tech: ['JavaScript', 'CSS'],
-  },
-  {
-    id: '06',
     kind: 'code',
-    url: 'https://github.com/your-username/your-repo',
-    title: { ar: 'مشروع أصغر', en: 'A smaller project' },
-    description: {
-      ar: 'سطر واحد يكفي هنا.',
-      en: 'One line is enough here.',
+    featured: true,
+    url: 'https://x.com/Najran_Univers/status/2018747185290973204',
+    title: { 
+      ar: 'نظام وسم للحضور التلقائي', 
+      en: 'Wsm Automated Attendance System' 
     },
-    tech: ['Python'],
+    description: {
+      ar: 'نظام ذكي موجه للفصول الدراسية يعتمد على متحكمات ESP32 وإشارات البلوتوث للتحقق من الحضور وتوثيقه تلقائياً، وهو المشروع الفائز بالمركز الأول في مسار إنيوثون جامعة نجران التقني والهندسي.',
+      en: 'An intelligent classroom attendance system built on ESP32 microcontrollers and Bluetooth signals to automatically verify and log attendance, winner of 1st place in the Najran University Hackathon (Technical & Engineering Track).',
+    },
+    tech: ['ESP32', 'BLE', 'IoT', 'Arduino'],
   },
+
 ]
