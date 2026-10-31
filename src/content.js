@@ -5,7 +5,7 @@
  */
 
 export const PROFILE = {
-  name: { ar: 'نهى صالح محمداحمد', en: 'Nuha Salih Mohammed' }, // TODO: تأكدي من الاسم الذي تريدينه ظاهرًا
+  name: { ar: 'نهى صالح محمداحمد', en: 'Nuha mmmmm Mohammed' }, // TODO: تأكدي من الاسم الذي تريدينه ظاهرًا
   email: 'pocopad66@gmai.com', // TODO
   github: 'https://github.com/nuha-salih',
   //linkedin: 'https://www.linkedin.com/in/TODO', // TODO أو احذفي السطر إن لم يكن لديك حساب
